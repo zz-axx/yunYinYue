@@ -1,0 +1,126 @@
+/* pages/index/index.wxss */
+.indexContainer .banner {
+  width: 100%;
+  height: 300rpx;
+}
+
+.indexContainer .banner image{
+  width: 100%;
+  height: 300rpx;
+}
+
+
+/* 图标导航区域 */
+.navContainer {
+  display: flex;
+}
+
+.navContainer .navItem {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navItem .iconfont {
+  font-size: 50rpx;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  background: rgb(240, 19, 19);
+  text-align: center;
+  line-height: 100rpx;
+  color: #fff;
+  margin: 20rpx 0;
+}
+
+.navItem text {
+  font-size: 26rpx;
+}
+
+
+/* 推荐歌曲 */
+.recommendContainer {
+  padding: 20rpx;
+}
+
+
+
+
+
+/* 滚动内容区 */
+.navScroll {
+  display: flex;
+  height: 300rpx;
+}
+
+
+.navScroll .scrollItem {
+  width: 200rpx;
+  margin-right: 20rpx;
+}
+
+.navScroll .scrollItem  image {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 10rpx;
+}
+
+.navScroll .scrollItem text{
+  display: block;
+  font-size: 26rpx;
+  /* 单行文本溢出 */
+  /*white-space: nowrap;*/
+  /*overflow: hidden;*/
+  /*text-overflow: ellipsis;*/
+
+  /* 多行文本溢出隐藏 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* 设置行数 */
+  -webkit-box-orient: vertical; /*规定子元素的对齐方向 */
+}
+
+
+/* 排行榜  */
+.topList {
+  padding: 20rpx;
+}
+
+.topListSwiper{
+  height: 460rpx;
+}
+
+.swiperContent {
+  background: #fbfbfb;
+  width: 96%;
+}
+
+/* 排行榜的内容区 */
+.swiperContent .title {
+  font-size: 28rpx;
+  line-height: 80rpx;
+}
+
+
+.swiperContent .musicImg {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 10rpx;
+
+}
+
+.musicContent {
+  display: flex;
+  margin-top: 20rpx;
+}
+
+.musicContent text {
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.musicContent .count{
+  width: 100rpx;
+  text-align: center;
+}

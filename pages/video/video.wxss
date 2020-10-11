@@ -1,0 +1,130 @@
+.videoContainer .header {
+  display: flex;
+  padding: 10rpx;
+
+}
+.videoContainer .header image {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.videoContainer .header .search {
+  border: 1rpx solid #eee;
+  margin: 0 20rpx;
+  flex: 2; /*flex: 1 伸缩盒模型宽度自动变成百分百，当前的伸缩个体分配权重高于其他个体*/
+}
+
+
+.videoContainer .header .placeholder{
+  font-size: 26rpx;
+  color:#d43c33;
+  text-align: center;
+
+}
+
+.videoContainer .header  input {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* 导航区域 */
+.videoNav {
+  display: flex;
+  white-space: nowrap;/*flexItem为纯文字的时候需要添加该属性*/
+  height: 62rpx;
+  padding: 10rpx 0;
+}
+
+.videoNav .scrollItem {
+  padding: 0 30rpx;
+}
+
+.videoNav .navContent {
+  height: 60rpx;
+  font-size: 30rpx;
+  line-height: 60rpx;
+}
+
+.videoNav .navContent.active {
+  border-bottom: 1rpx solid #d43c33;
+}
+
+
+/* 视频列表区域 */
+.videoList {
+  /*视口单位： vw, vh   1wh = 1%视口高度  1vw=1%视口宽度*/
+  height: calc(100vh - 102rpx); /*calc可以用来动态计算盒子的宽高*/
+}
+
+.videoItem {
+  padding: 0 3%;
+}
+
+
+/*.videoItem video-demo {*/
+  /*width: 100%;*/
+  /*height: 360rpx;*/
+  /*border-radius: 10rpx;*/
+/*}*/
+
+.videoItem .common {
+  width: 100%;
+  height: 360rpx;
+  border-radius: 10rpx;
+}
+
+
+.videoList .content {
+  font-size: 26rpx;
+  height:80rpx;
+  line-height: 80rpx;
+  max-width: 500rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* footer */
+.footer {
+  border-top: 1rpx solid #eee;
+  padding: 20rpx 0;
+}
+.footer .avatar {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.footer  .nickName {
+  font-size: 26rpx;
+  vertical-align: middle;
+  margin-left: 20rpx;
+}
+
+.footer .comments_praised {
+  float: right;
+}
+
+.comments_praised .btn {
+  display: inline;
+  padding: 0;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.comments_praised .btn:after {
+  border: none;
+}
+
+.comments_praised .item {
+  margin-left: 50rpx;
+  position: relative;
+}
+
+.comments_praised .item .count {
+  position: absolute;
+  top: -20rpx;
+  font-size: 20rpx;
+}

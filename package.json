@@ -1,0 +1,8 @@
+{
+  "name": "yunyinyue",
+  "version": "1.0.0",
+  "dependencies": {
+    "moment": "^2.27.0",
+    "pubsub-js": "^1.8.0"
+  }
+}
